@@ -3,6 +3,7 @@ The purpose of the script is to create strm files by extracting video links from
 
 My project with jellyfin server is getting better and better, in order to organize films and series, I've come across m3u lists and that's when the problem started. Organize this, with this script I can create the strm and link the video inside and jellyfin does the magic.
 
+Just one thing, I had a problem with names that contain : oh my, that didn't work so before running the script, change names that contain : ; In the middle example in the name of the film there is Spider-Man: No return home, that's the problem at the moment, I'm going to try to solve it currently I edit the name with a dash -.
 %%
 Here's the updated script that saves the .strm files in the "Strm" folder within the script's directory:
 Python
