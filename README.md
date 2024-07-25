@@ -59,7 +59,8 @@ def create_strm_files(m3u_data, output_dir="Strm"):
 
   print("Successfully created .strm files with movie URLs!")
 
-# Example usage
+# Example usage:
+# You can download a list of m3u or m3u8 movies, and add them to Jellyfin, but it's a mess, I want to organize them into libraries, hence this script. You copy the m3u content and paste it in the location, save and run the script, it will save in the same location where the script is running in a Strm folder (create this folder ok) run the script and that's it, all the films with names in .strm Jellyfin will read it as if the film were inside the library, but linked to the storage server. Well, then all you have to do is hunt for films around, right?
 # You can replace this with user input or read from a file
 m3u_data = """
 #EXTM3U
@@ -71,7 +72,7 @@ http://example.com/movie2.mp4
 """
 create_strm_files(m3u_data)
 
-The script has a correction for errors that occurred when the film name has name : name now it ignores this and can create the strm file
+The script has a correction bug for errors that occurred when the film name has name : name now it ignores this and can create the strm file.
 
 Here's a breakdown of the changes:
 
@@ -83,3 +84,4 @@ Here's a breakdown of the changes:
     Combine filename with path: filename = os.path.join(strm_dir, f"{title}.strm") constructs the complete filename with the path inside the "Strm" folder.
 
 Now, when the script runs, it will save the .strm files within the "Strm" folder located in the same directory as the script itself.
+!!!!! Hell, now I have a lot of movie files in strm that zone, next step is a script to put them in their respective folders with the name everything organized. Wait, I'll post it here.
