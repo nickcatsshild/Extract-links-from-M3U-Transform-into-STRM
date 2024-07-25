@@ -84,4 +84,5 @@ Here's a breakdown of the changes:
     Combine filename with path: filename = os.path.join(strm_dir, f"{title}.strm") constructs the complete filename with the path inside the "Strm" folder.
 
 Now, when the script runs, it will save the .strm files within the "Strm" folder located in the same directory as the script itself.
+
 !!!!! Hell, now I have a lot of movie files in strm that zone, next step is a script to put them in their respective folders with the name everything organized. Wait, I'll post it here.
